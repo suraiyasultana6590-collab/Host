@@ -5,7 +5,7 @@ import signal
 from telebot import types
 
 # --- CONFIGURATION ---
-API_TOKEN = 'YOUR_BOT_TOKEN_HARE'
+API_TOKEN = os.getenv("BOT_TOKEN")
 bot = telebot.TeleBot(API_TOKEN)
 
 # Dictionary to store project info: {chat_id: {project_name: {process: Popen_obj, filename: str}}}
